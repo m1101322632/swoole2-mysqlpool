@@ -113,6 +113,9 @@ class MySQLPool
 			unset(self::$connsNameMap[$id]);
 			throw new MySQLException('Cann\'t connect to MySQL server: ' . json_encode(self::$connsConfig[$connName]['serverInfo']));
 		}
+		
+		
+		   
 
 		return $conn;
 	}
